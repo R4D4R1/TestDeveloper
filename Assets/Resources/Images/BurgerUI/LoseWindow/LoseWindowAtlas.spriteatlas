@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LoseWindowAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 28962879e6667a844a1a6ae6f5df51bd, type: 3}
+    - {fileID: 2800000, guid: c9cb2ce2e75df1a4798afdc6c84e552f, type: 3}
+    - {fileID: 2800000, guid: 2aae82d75247c1c4ab8edf4b1b3c1700, type: 3}
+    - {fileID: 2800000, guid: 4d6cfe326d7bdba4ba7051af4b760577, type: 3}
+    - {fileID: 2800000, guid: 3a89f08ec2925db41800144c3936dafa, type: 3}
+    - {fileID: 2800000, guid: 17cb23f24ffbac94e9d26bb3d747e6dc, type: 3}
+    - {fileID: 2800000, guid: ff00d5ec44634634abfc6f30f5077294, type: 3}
+    - {fileID: 2800000, guid: 6d521aff43c5f854da8bf28ab958bf6f, type: 3}
+    - {fileID: 2800000, guid: f0119d7215bc5c846b9ef7a0564f0808, type: 3}
+    - {fileID: 2800000, guid: ab020ffdb8a98dc478036680f8461e69, type: 3}
+    - {fileID: 2800000, guid: f75d2401c3c457f488e21be471f1518c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - f75d2401c3c457f488e21be471f1518c: 21300000
+    - 4d6cfe326d7bdba4ba7051af4b760577: 21300000
+    - f0119d7215bc5c846b9ef7a0564f0808: 21300000
+    - c9cb2ce2e75df1a4798afdc6c84e552f: 21300000
+    - 17cb23f24ffbac94e9d26bb3d747e6dc: 21300000
+    - 2aae82d75247c1c4ab8edf4b1b3c1700: 21300000
+    - 28962879e6667a844a1a6ae6f5df51bd: 21300000
+    - ff00d5ec44634634abfc6f30f5077294: 21300000
+    - ab020ffdb8a98dc478036680f8461e69: 21300000
+    - 3a89f08ec2925db41800144c3936dafa: 21300000
+    - 6d521aff43c5f854da8bf28ab958bf6f: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f75d2401c3c457f488e21be471f1518c, type: 3}
+  - {fileID: 21300000, guid: 4d6cfe326d7bdba4ba7051af4b760577, type: 3}
+  - {fileID: 21300000, guid: f0119d7215bc5c846b9ef7a0564f0808, type: 3}
+  - {fileID: 21300000, guid: c9cb2ce2e75df1a4798afdc6c84e552f, type: 3}
+  - {fileID: 21300000, guid: 17cb23f24ffbac94e9d26bb3d747e6dc, type: 3}
+  - {fileID: 21300000, guid: 2aae82d75247c1c4ab8edf4b1b3c1700, type: 3}
+  - {fileID: 21300000, guid: 28962879e6667a844a1a6ae6f5df51bd, type: 3}
+  - {fileID: 21300000, guid: ff00d5ec44634634abfc6f30f5077294, type: 3}
+  - {fileID: 21300000, guid: ab020ffdb8a98dc478036680f8461e69, type: 3}
+  - {fileID: 21300000, guid: 3a89f08ec2925db41800144c3936dafa, type: 3}
+  - {fileID: 21300000, guid: 6d521aff43c5f854da8bf28ab958bf6f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - upgrade_button_press
+  - heart_1
+  - replay_button_press
+  - goals
+  - orange_down_substrate
+  - heart
+  - earned
+  - replay_button_lock
+  - upgrade_button_norm
+  - heart_2
+  - replay_button_norm
+  m_RenderDataMap: {}
+  m_Tag: LoseWindowAtlas
+  m_IsVariant: 0

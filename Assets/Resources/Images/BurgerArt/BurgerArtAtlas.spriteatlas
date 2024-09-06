@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BurgerArtAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 74789500804d5a74cb86e080b8f5e808, type: 3}
+    - {fileID: 2800000, guid: 48a87f825b901aa4981a5749780e78fc, type: 3}
+    - {fileID: 2800000, guid: 1d9954a4e6d119049923b3326b7557ce, type: 3}
+    - {fileID: 2800000, guid: 9d50066394428bb4c9868b5a12a9c8c4, type: 3}
+    - {fileID: 2800000, guid: 39b5dd7464d064b4cb06a1d4071e8b27, type: 3}
+    - {fileID: 2800000, guid: 8534cb4f08fcbe643bde4c14c06fb279, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 74789500804d5a74cb86e080b8f5e808: 21300000
+    - 48a87f825b901aa4981a5749780e78fc: 21300000
+    - 9d50066394428bb4c9868b5a12a9c8c4: 21300000
+    - 39b5dd7464d064b4cb06a1d4071e8b27: 21300000
+    - 1d9954a4e6d119049923b3326b7557ce: 21300000
+    - 8534cb4f08fcbe643bde4c14c06fb279: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 74789500804d5a74cb86e080b8f5e808, type: 3}
+  - {fileID: 21300000, guid: 48a87f825b901aa4981a5749780e78fc, type: 3}
+  - {fileID: 21300000, guid: 9d50066394428bb4c9868b5a12a9c8c4, type: 3}
+  - {fileID: 21300000, guid: 39b5dd7464d064b4cb06a1d4071e8b27, type: 3}
+  - {fileID: 21300000, guid: 1d9954a4e6d119049923b3326b7557ce, type: 3}
+  - {fileID: 21300000, guid: 8534cb4f08fcbe643bde4c14c06fb279, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - mustard_salfetki
+  - NewYork1_back_ready_iPhoneX
+  - table_up
+  - trash_close
+  - NewYork1_table_ready_iPhoneX
+  - trash_open
+  m_RenderDataMap: {}
+  m_Tag: BurgerArtAtlas
+  m_IsVariant: 0

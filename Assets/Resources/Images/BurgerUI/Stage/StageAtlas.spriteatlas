@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StageAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 9201d7f633e88e547ae0df12ed284c42, type: 3}
+    - {fileID: 2800000, guid: a7baef41a861167499eb94a32752c736, type: 3}
+    - {fileID: 2800000, guid: 897bb1a4ceb6bdb47a1d0c9d14c68e5a, type: 3}
+    - {fileID: 2800000, guid: 98dbeee61c9dbdc43b6ff79bcf687d6a, type: 3}
+    - {fileID: 2800000, guid: 99ca9c521db82f14dbab1c621fd0be86, type: 3}
+    - {fileID: 2800000, guid: a6203e034f6ef9d4685d808dec263f28, type: 3}
+    - {fileID: 2800000, guid: 99795283def5ab24887f8a11e41cec2b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - a7baef41a861167499eb94a32752c736: 21300000
+    - 99ca9c521db82f14dbab1c621fd0be86: 21300000
+    - a6203e034f6ef9d4685d808dec263f28: 21300000
+    - 99795283def5ab24887f8a11e41cec2b: 21300000
+    - 897bb1a4ceb6bdb47a1d0c9d14c68e5a: 21300000
+    - 98dbeee61c9dbdc43b6ff79bcf687d6a: 21300000
+    - 9201d7f633e88e547ae0df12ed284c42: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a7baef41a861167499eb94a32752c736, type: 3}
+  - {fileID: 21300000, guid: 99ca9c521db82f14dbab1c621fd0be86, type: 3}
+  - {fileID: 21300000, guid: a6203e034f6ef9d4685d808dec263f28, type: 3}
+  - {fileID: 21300000, guid: 99795283def5ab24887f8a11e41cec2b, type: 3}
+  - {fileID: 21300000, guid: 897bb1a4ceb6bdb47a1d0c9d14c68e5a, type: 3}
+  - {fileID: 21300000, guid: 98dbeee61c9dbdc43b6ff79bcf687d6a, type: 3}
+  - {fileID: 21300000, guid: 9201d7f633e88e547ae0df12ed284c42, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ic_customers
+  - order_back_02
+  - order_progress_bar
+  - panel_2
+  - ic_dish
+  - money_white_0_truecolor
+  - back
+  m_RenderDataMap: {}
+  m_Tag: StageAtlas
+  m_IsVariant: 0

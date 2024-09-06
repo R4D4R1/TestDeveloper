@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BurgerUIAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 4f1286aa7d4e5bb489f979b86b3ea4cd, type: 3}
+    - {fileID: 2800000, guid: 79baa760e45883140b56b14a949c0e79, type: 3}
+    - {fileID: 2800000, guid: b63b5dbcf6e26204fa903399ae11d63a, type: 3}
+    - {fileID: 2800000, guid: c23e8f1b771da3041972c8623c92ec70, type: 3}
+    - {fileID: 2800000, guid: 53a0aa2984ad21944bb532a4988941a3, type: 3}
+    - {fileID: 2800000, guid: 910685247562f3f47832cbdcb027a21f, type: 3}
+    - {fileID: 2800000, guid: 846533c46a2f42b4983ba33925192233, type: 3}
+    - {fileID: 2800000, guid: ab5578acfac947e4ea8366380f72cd4a, type: 3}
+    - {fileID: 2800000, guid: 6443f46d32aff934bbefbab0d0d3d445, type: 3}
+    - {fileID: 2800000, guid: 319f9864e96f6d340ad57b9c054b8260, type: 3}
+    - {fileID: 2800000, guid: f83a74b213ab37b42850d8da30b8d0b4, type: 3}
+    - {fileID: 2800000, guid: c8b0afa7650c73c48aaae125aca093a6, type: 3}
+    - {fileID: 2800000, guid: d4f0b596a89c2a6458fec94230bc4c6e, type: 3}
+    - {fileID: 2800000, guid: 083f7d293433a3549b2f58882f6836ae, type: 3}
+    - {fileID: 2800000, guid: 136bbced787fd1d4cb9830a33a798ccf, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 79baa760e45883140b56b14a949c0e79: 21300000
+    - f83a74b213ab37b42850d8da30b8d0b4: 21300000
+    - 910685247562f3f47832cbdcb027a21f: 21300000
+    - 319f9864e96f6d340ad57b9c054b8260: 21300000
+    - 846533c46a2f42b4983ba33925192233: 21300000
+    - d4f0b596a89c2a6458fec94230bc4c6e: 21300000
+    - c8b0afa7650c73c48aaae125aca093a6: 21300000
+    - 53a0aa2984ad21944bb532a4988941a3: 21300000
+    - 083f7d293433a3549b2f58882f6836ae: 21300000
+    - 4f1286aa7d4e5bb489f979b86b3ea4cd: 21300000
+    - c23e8f1b771da3041972c8623c92ec70: 21300000
+    - ab5578acfac947e4ea8366380f72cd4a: 21300000
+    - b63b5dbcf6e26204fa903399ae11d63a: 21300000
+    - 6443f46d32aff934bbefbab0d0d3d445: 21300000
+    - 136bbced787fd1d4cb9830a33a798ccf: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 79baa760e45883140b56b14a949c0e79, type: 3}
+  - {fileID: 21300000, guid: f83a74b213ab37b42850d8da30b8d0b4, type: 3}
+  - {fileID: 21300000, guid: 910685247562f3f47832cbdcb027a21f, type: 3}
+  - {fileID: 21300000, guid: 319f9864e96f6d340ad57b9c054b8260, type: 3}
+  - {fileID: 21300000, guid: 846533c46a2f42b4983ba33925192233, type: 3}
+  - {fileID: 21300000, guid: d4f0b596a89c2a6458fec94230bc4c6e, type: 3}
+  - {fileID: 21300000, guid: c8b0afa7650c73c48aaae125aca093a6, type: 3}
+  - {fileID: 21300000, guid: 53a0aa2984ad21944bb532a4988941a3, type: 3}
+  - {fileID: 21300000, guid: 083f7d293433a3549b2f58882f6836ae, type: 3}
+  - {fileID: 21300000, guid: 4f1286aa7d4e5bb489f979b86b3ea4cd, type: 3}
+  - {fileID: 21300000, guid: c23e8f1b771da3041972c8623c92ec70, type: 3}
+  - {fileID: 21300000, guid: ab5578acfac947e4ea8366380f72cd4a, type: 3}
+  - {fileID: 21300000, guid: b63b5dbcf6e26204fa903399ae11d63a, type: 3}
+  - {fileID: 21300000, guid: 6443f46d32aff934bbefbab0d0d3d445, type: 3}
+  - {fileID: 21300000, guid: 136bbced787fd1d4cb9830a33a798ccf, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - cancel_on
+  - progress_bar_bg
+  - done_button_norm
+  - off
+  - done_button_press
+  - red_back_1_truecolor
+  - progress_bar_fore
+  - chek
+  - red_progress_bar_01_truecolor
+  - cancel_off
+  - chef_win
+  - green_back_truecolor
+  - chef_lose
+  - green_progress_bar_truecolor
+  - title_back_1
+  m_RenderDataMap: {}
+  m_Tag: BurgerUIAtlas
+  m_IsVariant: 0

@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PanAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 6ec90bcdd5d63f94497a3d0e4bd6c899, type: 3}
+    - {fileID: 2800000, guid: 49a23cde791e0494684404c5356278e4, type: 3}
+    - {fileID: 2800000, guid: c1b40279ba454cd49bb16e3044d8664f, type: 3}
+    - {fileID: 2800000, guid: 324b744e42babe04d8bb1c6ff004126c, type: 3}
+    - {fileID: 2800000, guid: e677a59f4c5cd0f49b73e1e69562c035, type: 3}
+    - {fileID: 2800000, guid: e6192f61812c2fe43977050af9f6c234, type: 3}
+    - {fileID: 2800000, guid: f7d26cb478c3b1f4ca5546ea64bad8ac, type: 3}
+    - {fileID: 2800000, guid: b542ad20ad6c0d34aac014f77c29bd2a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - b542ad20ad6c0d34aac014f77c29bd2a: 21300000
+    - e6192f61812c2fe43977050af9f6c234: 21300000
+    - f7d26cb478c3b1f4ca5546ea64bad8ac: 21300000
+    - c1b40279ba454cd49bb16e3044d8664f: 21300000
+    - 6ec90bcdd5d63f94497a3d0e4bd6c899: 21300000
+    - 324b744e42babe04d8bb1c6ff004126c: 21300000
+    - 49a23cde791e0494684404c5356278e4: 21300000
+    - e677a59f4c5cd0f49b73e1e69562c035: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b542ad20ad6c0d34aac014f77c29bd2a, type: 3}
+  - {fileID: 21300000, guid: e6192f61812c2fe43977050af9f6c234, type: 3}
+  - {fileID: 21300000, guid: f7d26cb478c3b1f4ca5546ea64bad8ac, type: 3}
+  - {fileID: 21300000, guid: c1b40279ba454cd49bb16e3044d8664f, type: 3}
+  - {fileID: 21300000, guid: 6ec90bcdd5d63f94497a3d0e4bd6c899, type: 3}
+  - {fileID: 21300000, guid: 324b744e42babe04d8bb1c6ff004126c, type: 3}
+  - {fileID: 21300000, guid: 49a23cde791e0494684404c5356278e4, type: 3}
+  - {fileID: 21300000, guid: e677a59f4c5cd0f49b73e1e69562c035, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - pan_meat_3
+  - pan_sosige_3_norm
+  - pan_sosige_3_raw
+  - pan_meat_3_raw
+  - pan_meat_3_burn
+  - pan_sosige_3
+  - pan_meat_3_norm
+  - pan_sosige_3_burn
+  m_RenderDataMap: {}
+  m_Tag: PanAtlas
+  m_IsVariant: 0

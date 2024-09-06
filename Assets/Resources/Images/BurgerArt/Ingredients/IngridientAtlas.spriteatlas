@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IngridientAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: a37476d037eaa0740ad9ab3ddbef61d9, type: 3}
+    - {fileID: 2800000, guid: 112455111b18a2842aa742cde10c19ad, type: 3}
+    - {fileID: 2800000, guid: 3472c2ff1d63bb04a8decb3a7327b4b3, type: 3}
+    - {fileID: 2800000, guid: 151d533d974507345b7d66b8777d6b6f, type: 3}
+    - {fileID: 2800000, guid: f536e29284e8ec44bb8788fd0de474a0, type: 3}
+    - {fileID: 2800000, guid: f8cd27d7c91806747b88a60758b917ff, type: 3}
+    - {fileID: 2800000, guid: 7a36f54c7bad3c442b400b8810c22d85, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - a37476d037eaa0740ad9ab3ddbef61d9: 21300000
+    - 112455111b18a2842aa742cde10c19ad: 21300000
+    - f536e29284e8ec44bb8788fd0de474a0: 21300000
+    - f8cd27d7c91806747b88a60758b917ff: 21300000
+    - 7a36f54c7bad3c442b400b8810c22d85: 21300000
+    - 151d533d974507345b7d66b8777d6b6f: 21300000
+    - 3472c2ff1d63bb04a8decb3a7327b4b3: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a37476d037eaa0740ad9ab3ddbef61d9, type: 3}
+  - {fileID: 21300000, guid: 112455111b18a2842aa742cde10c19ad, type: 3}
+  - {fileID: 21300000, guid: f536e29284e8ec44bb8788fd0de474a0, type: 3}
+  - {fileID: 21300000, guid: f8cd27d7c91806747b88a60758b917ff, type: 3}
+  - {fileID: 21300000, guid: 7a36f54c7bad3c442b400b8810c22d85, type: 3}
+  - {fileID: 21300000, guid: 151d533d974507345b7d66b8777d6b6f, type: 3}
+  - {fileID: 21300000, guid: 3472c2ff1d63bb04a8decb3a7327b4b3, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bread_burger_3
+  - bread_hotdog_3
+  - mustard_3
+  - sosige_3
+  - tomato_3
+  - meat_3
+  - cheese_3
+  m_RenderDataMap: {}
+  m_Tag: IngridientAtlas
+  m_IsVariant: 0

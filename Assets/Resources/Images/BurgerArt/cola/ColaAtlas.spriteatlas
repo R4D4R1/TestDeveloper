@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ColaAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 2ed863726f2c18c4dba5f1acaa7d567d, type: 3}
+    - {fileID: 2800000, guid: 42d64ec41648ace41bdbcbe29c1a25ea, type: 3}
+    - {fileID: 2800000, guid: b063c51ba66ce5749b0b667fee015419, type: 3}
+    - {fileID: 2800000, guid: 07ff7721165dfb34392cadefe535cc3d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 07ff7721165dfb34392cadefe535cc3d: 21300000
+    - 2ed863726f2c18c4dba5f1acaa7d567d: 21300000
+    - 42d64ec41648ace41bdbcbe29c1a25ea: 21300000
+    - b063c51ba66ce5749b0b667fee015419: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 07ff7721165dfb34392cadefe535cc3d, type: 3}
+  - {fileID: 21300000, guid: 2ed863726f2c18c4dba5f1acaa7d567d, type: 3}
+  - {fileID: 21300000, guid: 42d64ec41648ace41bdbcbe29c1a25ea, type: 3}
+  - {fileID: 21300000, guid: b063c51ba66ce5749b0b667fee015419, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - cola_machine_3_2
+  - cola_3_empty_1
+  - cola_3_full
+  - cola_machine_3_1
+  m_RenderDataMap: {}
+  m_Tag: ColaAtlas
+  m_IsVariant: 0
