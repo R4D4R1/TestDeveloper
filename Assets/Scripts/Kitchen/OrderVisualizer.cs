@@ -12,6 +12,7 @@ namespace CookingPrototype.Kitchen {
 
 		void Clear() {
 			Visualizers.ForEach(x => x.SetEnabled(false));
+			//Visualizers.ForEach(x => Debug.Log(x.name + " " + x.transform.parent.name));
 		}
 
 		public void Init(List<string> foods) {

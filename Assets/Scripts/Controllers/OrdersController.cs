@@ -61,6 +61,7 @@ namespace CookingPrototype.Controllers {
 				var order = ParseOrder(node);
 				Orders.Add(order);
 			}
+
 			_isInit = true;
 		}
 
