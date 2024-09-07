@@ -3,6 +3,8 @@ using System;
 using UnityEngine;
 
 using JetBrains.Annotations;
+using UnityEngine.EventSystems;
+using System.Threading.Tasks;
 
 namespace CookingPrototype.Kitchen {
 	[RequireComponent(typeof(FoodPlace))]
@@ -10,6 +12,7 @@ namespace CookingPrototype.Kitchen {
 
 		FoodPlace _place = null;
 		float     _timer = 0f;
+		int       _clickCount = 0;
 
 		void Start() {
 			_place = GetComponent<FoodPlace>();
@@ -21,7 +24,18 @@ namespace CookingPrototype.Kitchen {
 		/// </summary>
 		[UsedImplicitly]
 		public void TryTrashFood() {
-			_place.FreePlace();
+			if ( _place.CurFood.CurStatus == Food.FoodStatus.Overcooked ) {
+				_clickCount++;
+				RestartDoubleClickTime();
+
+				if ( _clickCount == 2)
+					_place.FreePlace();
+			}
+		}
+
+		private async void RestartDoubleClickTime() {
+			await Task.Delay(250);
+			_clickCount = 0;
 		}
 	}
 }
