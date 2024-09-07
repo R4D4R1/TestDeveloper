@@ -13,7 +13,7 @@ namespace CookingPrototype.Kitchen {
 		public void TryPlaceFood() {
 			foreach ( var place in Places ) {
 				if ( place.TryPlaceFood(new Food(FoodName)) ) {
-					Debug.Log(FoodName);
+					//Debug.Log(FoodName);
 					return;
 				}
 			}
