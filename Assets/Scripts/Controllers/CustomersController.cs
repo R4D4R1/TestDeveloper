@@ -156,6 +156,7 @@ namespace CookingPrototype.Controllers {
 
 					if ( order == customerOrder ) {
 						//Debug.Log($" Customer has this food = {order.Name} and his time left is = {customerPlace.CurCustomer.WaitTime:0.00}");
+						// Min value not oprimized for many customers
 						if ( customerPlace.CurCustomer.WaitTime < minTime ) {
 							targetCustomerPlace = customerPlace;
 							minTime = customerPlace.CurCustomer.WaitTime;
@@ -167,7 +168,10 @@ namespace CookingPrototype.Controllers {
 				Debug.Log($" Customer has this food = {order.Name} and his time left is = {targetCustomerPlace.CurCustomer.WaitTime:0.00}");
 				targetCustomerPlace.CurCustomer.ServeOrder( order );
 
-				if ( targetCustomerPlace.CurCustomer.GetCustomerOrders().Count == 0 ) {
+				//Used ready property IsCompelte
+				if ( targetCustomerPlace.CurCustomer.IsComplete) {
+
+					//Used ready property FreeCustomer
 					FreeCustomer(targetCustomerPlace.CurCustomer);
 					Debug.Log($" Customer has been released");
 				}

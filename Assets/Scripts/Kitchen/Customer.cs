@@ -20,6 +20,9 @@ namespace CookingPrototype.Kitchen {
 		float       _timer    = 0f;
 		bool        _isActive = false;
 
+		/// <summary>
+		/// Custom Func to get customers order
+		/// </summary>
 		public List<Order> GetCustomerOrders() {
 			return _orders;
 		}
