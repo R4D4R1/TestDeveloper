@@ -14,10 +14,10 @@ namespace CookingPrototype.Controllers {
 
 		public static CustomersController Instance { get; private set; }
 
-		public int                 CustomersTargetNumber = 15;
-		public float               CustomerWaitTime      = 18f;
-		public float               CustomerSpawnTime     = 3f;
-		public List<CustomerPlace> CustomerPlaces        = null;
+		public int CustomersTargetNumber = 15;
+		public float CustomerWaitTime = 18f;
+		public float CustomerSpawnTime = 3f;
+		public List<CustomerPlace> CustomerPlaces = null;
 
 		[HideInInspector]
 		public int TotalCustomersGenerated { get; private set; } = 0;
@@ -28,6 +28,12 @@ namespace CookingPrototype.Controllers {
 
 		float _timer = 0f;
 		Stack<List<Order>> _orderSets;
+
+		/// New fileds
+
+		List<CustomerPlace> _allActiveCustomerPlaces;
+		CustomerPlace _customerPlaceThatNeedToBeFree;
+		float _lowestTimeOfAllCustomers;
 
 		bool HasFreePlaces {
 			get { return CustomerPlaces.Any(x => x.IsFree); }
@@ -85,7 +91,7 @@ namespace CookingPrototype.Controllers {
 
 		Customer GenerateCustomer() {
 			var customerGo = Instantiate(Resources.Load<GameObject>(CUSTOMER_PREFABS_PATH));
-			var customer   = customerGo.GetComponent<Customer>();
+			var customer = customerGo.GetComponent<Customer>();
 
 			var orders = _orderSets.Pop();
 			customer.Init(orders);
@@ -115,7 +121,7 @@ namespace CookingPrototype.Controllers {
 
 			TotalCustomersGenerated = 0;
 			TotalCustomersGeneratedChanged?.Invoke();
-			 
+
 			GameplayController.Instance.OrdersTarget = totalOrders - 2;
 		}
 
@@ -142,49 +148,47 @@ namespace CookingPrototype.Controllers {
 		/// 
 		public bool ServeOrder(Order order) {
 
-			Debug.Log($" Order name = {order.Name} ");
+			/// --- Pseudo code ---
+			/// 1. Find all customers
+			/// 2. Pick customers with needed dish
+			/// 3. Pick one with smalles time left
+			/// 4. Free this customer
+			/// 5. Check if it is his last dish
 
-			// взять того у кого меньше времени
-			// отпустить этого покупателя
+			_allActiveCustomerPlaces = CustomerPlaces.FindAll(x => x.CurCustomer);
+			_customerPlaceThatNeedToBeFree = null;
+			_lowestTimeOfAllCustomers = CustomerWaitTime;
 
-			// Нужно взять всех людей
-			var currentCustomerPlaces = CustomerPlaces.FindAll(x => x.CurCustomer);
-			CustomerPlace targetCustomerPlace = null;
-			float minTime = CustomerWaitTime; 
-			foreach ( var customerPlace in currentCustomerPlaces ) {
-				foreach ( var customerOrder in customerPlace.CurCustomer.GetCustomerOrders() ) {
+			foreach ( var place in _allActiveCustomerPlaces ) {
+				Debug.Log(place.CurCustomer.WaitTime);
+			}
 
+			foreach ( var customerPlace in _allActiveCustomerPlaces.OrderBy(x => x.CurCustomer.WaitTime)){
+				foreach ( var customerOrder in customerPlace.CurCustomer.Orders ) {
 					if ( order == customerOrder ) {
-						//Debug.Log($" Customer has this food = {order.Name} and his time left is = {customerPlace.CurCustomer.WaitTime:0.00}");
-						// Min value not oprimized for many customers
-						if ( customerPlace.CurCustomer.WaitTime < minTime ) {
-							targetCustomerPlace = customerPlace;
-							minTime = customerPlace.CurCustomer.WaitTime;
-						}
+						_customerPlaceThatNeedToBeFree = customerPlace;
+						break;
 					}
 				}
+				break;
 			}
-			if ( targetCustomerPlace != null ) {
-				Debug.Log($" Customer has this food = {order.Name} and his time left is = {targetCustomerPlace.CurCustomer.WaitTime:0.00}");
-				targetCustomerPlace.CurCustomer.ServeOrder( order );
 
-				//Used ready property IsCompelte
-				if ( targetCustomerPlace.CurCustomer.IsComplete) {
+			/// Checking if 
+			if ( _customerPlaceThatNeedToBeFree != null ) {
+				Debug.Log($" Customer has this food = {order.Name} and his time left is = {_customerPlaceThatNeedToBeFree.CurCustomer.WaitTime:0.00}");
+				_customerPlaceThatNeedToBeFree.CurCustomer.ServeOrder(order);
 
-					//Used ready property FreeCustomer
-					FreeCustomer(targetCustomerPlace.CurCustomer);
+				/// Used ready property IsCompelte
+				if ( _customerPlaceThatNeedToBeFree.CurCustomer.IsComplete ) {
+					/// Used ready property FreeCustomer
+					FreeCustomer(_customerPlaceThatNeedToBeFree.CurCustomer);
 					Debug.Log($" Customer has been released");
 				}
-
 				return true;
 			}
-			else
+			else {
 				return false;
-
-
-			// взять тех у кого есть в заказе еда
-
-			//throw  new NotImplementedException("ServeOrder: this feature is not implemented.");
+			}
 		}
 	}
 }
