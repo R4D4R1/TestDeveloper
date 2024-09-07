@@ -159,10 +159,6 @@ namespace CookingPrototype.Controllers {
 			_customerPlaceThatNeedToBeFree = null;
 			_lowestTimeOfAllCustomers = CustomerWaitTime;
 
-			foreach ( var place in _allActiveCustomerPlaces ) {
-				Debug.Log(place.CurCustomer.WaitTime);
-			}
-
 			foreach ( var customerPlace in _allActiveCustomerPlaces.OrderBy(x => x.CurCustomer.WaitTime)){
 				foreach ( var customerOrder in customerPlace.CurCustomer.Orders ) {
 					if ( order == customerOrder ) {
@@ -170,7 +166,8 @@ namespace CookingPrototype.Controllers {
 						break;
 					}
 				}
-				break;
+				if( _customerPlaceThatNeedToBeFree !=null)
+					break;
 			}
 
 			/// Checking if 
@@ -187,6 +184,8 @@ namespace CookingPrototype.Controllers {
 				return true;
 			}
 			else {
+				Debug.Log($"No customer");
+
 				return false;
 			}
 		}
