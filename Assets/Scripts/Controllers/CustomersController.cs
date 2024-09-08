@@ -34,6 +34,7 @@ namespace CookingPrototype.Controllers {
 		List<CustomerPlace> _allActiveCustomerPlaces;
 		CustomerPlace _customerPlaceThatNeedToBeFree;
 		float _lowestTimeOfAllCustomers;
+		bool _isGameStarted = false;
 
 		bool HasFreePlaces {
 			get { return CustomerPlaces.Any(x => x.IsFree); }
@@ -52,18 +53,43 @@ namespace CookingPrototype.Controllers {
 			Instance = this;
 		}
 
+		private void Start() {
+			GenerateOrders();
+
+			UIController.Instance.GameStarted += OnGameStarted;
+		}
+
 		void OnDestroy() {
 			if ( Instance == this ) {
 				Instance = null;
 			}
+
+			if ( UIController.Instance ) {
+				UIController.Instance.GameStarted -= OnGameStarted;
+
+			}
+
+			if ( UIController.Instance ) {
+				UIController.Instance.GameStarted -= OnGameStarted;
+			}
 		}
 
-		void Start() {
+		private void OnGameStarted() {
+			_isGameStarted = true;
 			Init();
 		}
 
+		//void Start() {
+		//	Init();
+		//}
+
 		void Update() {
-			if ( !HasFreePlaces ) {
+
+			if ( !_isGameStarted ) {
+				return;
+			}
+
+			if ( !HasFreePlaces) {
 				return;
 			}
 
@@ -103,9 +129,9 @@ namespace CookingPrototype.Controllers {
 			var oc = OrdersController.Instance;
 			return oc.Orders[Random.Range(0, oc.Orders.Count)];
 		}
-
-		public void Init() {
-			var totalOrders = 0;
+		int totalOrders;
+		public void GenerateOrders() {
+			totalOrders = 0;
 			_orderSets = new Stack<List<Order>>();
 			for ( var i = 0; i < CustomersTargetNumber; i++ ) {
 				var orders = new List<Order>();
@@ -116,6 +142,10 @@ namespace CookingPrototype.Controllers {
 				_orderSets.Push(orders);
 				totalOrders += ordersNum;
 			}
+			UIController.Instance.GoalText.text = (totalOrders - 2).ToString();
+		}
+
+		public void Init() {
 			CustomerPlaces.ForEach(x => x.Free());
 			_timer = 0f;
 

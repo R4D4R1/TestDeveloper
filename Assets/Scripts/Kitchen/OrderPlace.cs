@@ -16,9 +16,29 @@ namespace CookingPrototype.Kitchen {
 
 		List<Order>  _possibleOrders = new List<Order>();
 
-		void Start() {
-			_possibleOrders.AddRange(OrdersController.Instance.Orders);
+		private void Start() {
+			UIController.Instance.GameStarted += OnGameStarted;
 		}
+
+		void OnDestroy() {
+			if ( UIController.Instance ) {
+				UIController.Instance.GameStarted -= OnGameStarted;
+
+			}
+
+			if ( UIController.Instance ) {
+				UIController.Instance.GameStarted -= OnGameStarted;
+			}
+		}
+
+		private void OnGameStarted() {
+			_possibleOrders.AddRange(OrdersController.Instance.Orders);
+
+		}
+
+		//void Start() {
+		//	_possibleOrders.AddRange(OrdersController.Instance.Orders);
+		//}
 
 		bool CanAddFood(Food food) {
 			if ( CurOrder.Contains(food.Name) ) {
