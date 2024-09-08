@@ -24,12 +24,14 @@ namespace CookingPrototype.Kitchen {
 		/// </summary>
 		[UsedImplicitly]
 		public void TryTrashFood() {
-			if ( _place.CurFood.CurStatus == Food.FoodStatus.Overcooked ) {
-				_clickCount++;
-				RestartDoubleClickTime();
+			if ( _place.CurFood != null ) {
+				if ( _place.CurFood.CurStatus == Food.FoodStatus.Overcooked ) {
+					_clickCount++;
+					RestartDoubleClickTime();
 
-				if ( _clickCount == 2)
-					_place.FreePlace();
+					if ( _clickCount == 2 )
+						_place.FreePlace();
+				}
 			}
 		}
 
